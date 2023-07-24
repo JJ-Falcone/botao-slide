@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    height: 50vh;
+}
+
+input{
+    display: none
+}
+
+
+.botao__contorno{
+    display: inline;
+    width: 16rem;
+    height: 8rem;
+    padding: 1rem;
+    background: #474747;
+    border-radius: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.8s;
+}
+
+input:checked + label{
+    background: #f33cea;
+    box-shadow: 0 0  20px 1px #b654b1;
+}
+
+input:checked + label .botao__bolinha{
+    transform: translateX(8rem);
+}
+
+
+
+.botao__bolinha{
+    position: relative;
+    background: #fff;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    transition: 0.8s;
+}   
